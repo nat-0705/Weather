@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 from google.cloud import bigquery
 from datetime import datetime, timezone
+import os
 
 CITIES = {
     "Manila": (14.5995, 120.9842),
@@ -12,7 +13,7 @@ CITIES = {
 PROJECT_ID = "weather-508506"
 DATASET_ID = "weather_raw"
 TABLE_ID = "hourly_weather"
-CREDENTIALS_PATH = "weather-508506-d731b34cd36a.json"
+CREDENTIALS_PATH = os.environ.get("CREDENTIALS_PATH", "weather-508506-d731b34cd36a.json")
 
 def fetch_weather(city, lat, lon):
     url = "https://api.open-meteo.com/v1/forecast"
