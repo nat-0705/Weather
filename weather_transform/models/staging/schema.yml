@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_weather
+    description: "Deduplicated hourly weather forecasts per city, keeping only the latest fetch."
+    columns:
+      - name: city
+        description: "City name (Manila, Cebu, or Davao)"
+        tests:
+          - not_null
+      - name: forecast_time
+        description: "The forecasted hour"
+        tests:
+          - not_null
+      - name: temperature_2m
+        description: "Temperature at 2m in Celsius"
+        tests:
+          - not_null

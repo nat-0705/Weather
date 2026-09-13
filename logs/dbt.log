@@ -1,0 +1,81 @@
+[0m06:57:15.847350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021144AB2BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021142664F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002114746F890>]}
+
+
+============================== 06:57:15.859605 | 7ca7d1eb-106b-4aa7-8c42-e12ec223b89d ==============================
+[0m06:57:15.859605 [info ] [MainThread]: Running with dbt=1.12.4
+[0m06:57:15.861041 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\natha\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init weather_transform', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m06:57:15.908719 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\natha\.dbt
+[0m06:57:15.914971 [debug] [MainThread]: Starter project path: C:\Users\natha\OneDrive\Documents\Project\Weather\venv\Lib\site-packages\dbt\include\starter_project
+[0m06:57:15.945550 [info ] [MainThread]: Setting up your profile.
+[0m07:00:12.936927 [info ] [MainThread]: Profile weather_transform written to C:\Users\natha\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m07:00:12.943345 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m07:00:12.944876 [info ] [MainThread]: dbt version: 1.12.4
+[0m07:00:12.945564 [info ] [MainThread]: python version: 3.14.7
+[0m07:00:12.946041 [info ] [MainThread]: python path: C:\Users\natha\OneDrive\Documents\Project\Weather\venv\Scripts\python.exe
+[0m07:00:12.946491 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m07:00:13.017224 [info ] [MainThread]: Using profiles dir at C:\Users\natha\.dbt
+[0m07:00:13.017892 [info ] [MainThread]: Using profiles.yml file at C:\Users\natha\.dbt\profiles.yml
+[0m07:00:13.018448 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\natha\OneDrive\Documents\Project\Weather\weather_transform\dbt_project.yml
+[0m07:00:13.018833 [info ] [MainThread]: adapter type: bigquery
+[0m07:00:13.019160 [info ] [MainThread]: adapter version: 1.12.0
+[0m07:00:13.131815 [info ] [MainThread]: Configuration:
+[0m07:00:13.132488 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:00:13.133092 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:00:13.133589 [info ] [MainThread]: Required dependencies:
+[0m07:00:13.134046 [debug] [MainThread]: Executing "git --help"
+[0m07:00:13.197814 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:00:13.198406 [debug] [MainThread]: STDERR: "b''"
+[0m07:00:13.198844 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:00:13.199376 [info ] [MainThread]: Connection:
+[0m07:00:13.199896 [info ] [MainThread]:   method: service-account
+[0m07:00:13.200242 [info ] [MainThread]:   database: weather-508506
+[0m07:00:13.200616 [info ] [MainThread]:   execution_project: weather-508506
+[0m07:00:13.200976 [info ] [MainThread]:   schema: weather_transform
+[0m07:00:13.201364 [info ] [MainThread]:   location: US
+[0m07:00:13.201867 [info ] [MainThread]:   priority: interactive
+[0m07:00:13.202317 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m07:00:13.202714 [info ] [MainThread]:   reservation: None
+[0m07:00:13.203041 [info ] [MainThread]:   impersonate_service_account: None
+[0m07:00:13.203358 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m07:00:13.203674 [info ] [MainThread]:   job_retries: 1
+[0m07:00:13.203986 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m07:00:13.204296 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m07:00:13.204726 [info ] [MainThread]:   job_link_info_level_log: False
+[0m07:00:13.205270 [info ] [MainThread]:   timeout_seconds: 300
+[0m07:00:13.205793 [info ] [MainThread]:   client_id: None
+[0m07:00:13.206210 [info ] [MainThread]:   token_uri: None
+[0m07:00:13.206724 [info ] [MainThread]:   compute_region: None
+[0m07:00:13.207247 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m07:00:13.207821 [info ] [MainThread]:   gcs_bucket: None
+[0m07:00:13.208237 [info ] [MainThread]:   dataproc_batch: None
+[0m07:00:13.209188 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m07:00:13.724241 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m07:00:13.724647 [debug] [MainThread]: On debug: select 1 as id
+[0m07:00:13.725015 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:00:15.812234 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=weather-508506&j=bq:US:4d9f3f26-cfdf-442a-8079-2511ffe91ad1&page=queryresults
+[0m07:00:16.412751 [debug] [MainThread]: SQL status: OK in 0.600 seconds
+[0m07:00:17.019360 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:00:17.019955 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:00:17.020714 [info ] [MainThread]: Your new dbt project "weather_transform" was created!
+Initialized new project in C:\Users\natha\OneDrive\Documents\Project\Weather\weather_transform\weather_transform
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:00:17.022650 [debug] [MainThread]: Command `dbt init` succeeded at 07:00:17.022361 after 181.51 seconds
+[0m07:00:17.023167 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:00:17.023653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211472F3E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002116148B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002116130ECF0>]}
+[0m07:00:17.024448 [debug] [MainThread]: Flushing usage events
+[0m07:00:18.290573 [debug] [MainThread]: An error was encountered while trying to flush usage events
