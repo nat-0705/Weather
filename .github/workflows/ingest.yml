@@ -25,3 +25,5 @@ jobs:
 
       - name: Run ingestion script
         run: python ingest.py
+        env:
+          CREDENTIALS_PATH: credentials.json
